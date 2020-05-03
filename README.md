@@ -1,2 +1,2 @@
 # Hackerranksolution
-here i provide all solution of problem solving in HackerRank
+Here i will provide all solution of hackerRank problem
