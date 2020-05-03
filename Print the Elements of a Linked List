@@ -1,0 +1,5 @@
+def printLinkedList(head):
+    curr=head
+    while head:
+        print(head.data)
+        head=head.next
