@@ -1,0 +1,15 @@
+def insertNodeAtPosition(head, data, position):
+    cur_node=head
+    new_node=SinglyLinkedListNode(data)
+    if position==0:
+        head=new_node
+        return head
+    count=0
+    prev=None
+    while cur_node and count!=position:
+        prev=cur_node
+        count+=1
+        cur_node=cur_node.next
+    prev.next=new_node
+    new_node.next=cur_node
+    return head
