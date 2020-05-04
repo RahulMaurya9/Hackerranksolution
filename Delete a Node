@@ -1,0 +1,15 @@
+def deleteNode(head, position):
+    cur_node=head
+    if position==0:
+        head=cur_node.next
+        cur_node.next=None
+        return head
+    count=0
+    prev=None
+    while cur_node and count!=position:
+        prev=cur_node
+        cur_node=cur_node.next
+        count+=1
+    prev.next=cur_node.next
+    cur_node.next=None
+    return head
