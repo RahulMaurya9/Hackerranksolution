@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    list1=[]
+    scores=[]
+    for i in range(int(input())):
+        list1.append([])
+        name = input()
+        score = float(input())
+        list1[i].append(name)
+        list1[i].append(score)
+        scores.append(score)
+    res =[]
+    val=min(scores)
+    while val in scores: scores.remove(val)
+    min_term= min(scores)
+    for i in range(len(list1)):
+        if float(list1[i][1]) ==min_term:
+            res.append(list1[i][0])
+    res=sorted(res)
+    for item in res:
+        print(item)
