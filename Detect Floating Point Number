@@ -1,0 +1,9 @@
+import numpy as np
+a,b=map(int,input().split())
+arr1=np.zeros((a,b),int)
+arr2=np.zeros((a,b),int)
+for i in range(a):
+    arr1[i]=np.array(input().split(),int)
+for i in range(a):
+    arr2[i]=np.array(input().split(),int)
+print(arr1+arr2,arr1-arr2,arr1*arr2,np.array(arr1/arr2,int),arr1%arr2,arr1**arr2,sep="\n")
